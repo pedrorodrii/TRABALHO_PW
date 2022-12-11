@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C2D40;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title01 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 5vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.area-conversor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.conversor{
+    width: 350px;
+    height: 150px;
+    color: #fff;
+    padding-top: 8vh;
+    font-size: 20px;
+}
+
+.conversor input{
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.conversor select{
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.area-botao{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8vh;
+}
+
+.botao input {
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    border-radius: 15px;
+    padding-left: 10px;
+    width: 10vw;
+}
+
+.limpar{
+    background-color: #346A40;
+}
+
+.calcular{
+    background-color: #46527E;
+}
+
+.title02{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding-top: 8vh;
+}
+
+.area-valores{
+    display: inline-block;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 5vh;
+    padding-left: 10vh;
+}
+
+.valores {
+    width: 350px;
+    height: 150px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#moedaSaidaEuro {
+    background-color: #07202e;
+    color: #fff;
+    font-weight: bold;
+}
+#moedaSaidaReal {
+    background-color: #07202e;
+    color: #fff;
+    font-weight: bold;
+}
+
+#moedaSaidaDolar {
+    background-color: #07202e;
+    color: #fff;
+    font-weight: bold;
+}

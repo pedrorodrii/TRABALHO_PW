@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título da Página (1)-->
+    <div class="title01"><h1>Calculadora Conversor de Moeda</h1></div>
+    <!-- Container da Página -->
+    <div class="container">
+    <!-- Área de Conversão -->
+        <div class="area-conversor">
+    <!-- Conversor da Página -->
+            <div class="conversor">
+                <form>
+                    <label for="">Insira o valor converter <span><img src="./img/alert.png" alt="alerta"></span></label>
+                    <br>
+                    <input type="text" placeholder="Digite um valor" id="valor01">
+                </form>
+            </div>
+            <div class="conversor">
+                <form>
+                    <label for="">Moeda para Conversão <span><img src="./img/alert.png" alt="alerta"></span></label>
+                    <br>
+                    <select name="" id="valor02">
+                        <option value="USD" id="USD">Dólar</option>
+                        <option value="EUR" id="EUR">Euro</option>
+                        <option value="BRL" id="BRL">Real Brasileiro</option>
+                    </select>
+                </form>
+            </div>
+            <div class="conversor">
+                <form>
+                    <label for="">Moeda Convertida <span><img src="./img/alert.png" alt="alerta"></span></label>
+                    <br>
+                    <select name="" id="valor03">
+                        <option value="BRL" id="BRL">Real Brasileiro</option>
+                        <option value="EUR" id="EUR">Euro</option>
+                        <option value="USB" id="USB">Dólar</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Saída da conversão -->
+    <div class="area-saida">
+        <div class="saida">
+            <h2 id="saida"></h2>
+        </div>
+    </div>
+    <!-- Área dos botões -->
+        <div class="area-botao">
+    <!-- Botão Limpar -->
+            <div class="botao">
+                <input type="reset" value="Limpar" class="limpar" id="btnLimpar">
+            </div>
+    <!-- Botão Calcular -->
+            <div class="botao">
+                <input type="button" value="Calcular" onclick="converter();" class="calcular" id="btnConverter">
+            </div>
+        </div>
+    <!-- Título da página (2) -->
+    <div class="title02"><h1>Tabela de Valores</h1></div>
+    <!-- Tabela dos valores (Dólar)-->
+    <div class="area-valores">
+        <div class="valores">
+            <p id="moedaSaidaDolar"></p>
+            <p id="saidaDolarReal"></p>
+            <p id="saidaDolarRealMin"></p>
+            <p id="saidaDolarDate"></p>
+        </div>
+    </div>
+    <!-- Tabela dos valores (Real)-->
+    <div class="area-valores">
+        <div class="valores">
+            <p id="moedaSaidaReal"></p>
+            <p id="saidaReal"></p>
+            <p id="saidaRealMin"></p>
+            <p id="saidaRealDate"></p>
+        </div>
+    </div>
+
+    <!-- Tabela dos valores (Euro)-->
+    <div class="area-valores">
+        <div class="valores">
+            <p id="moedaSaidaEuro"></p>
+            <p id="saidaEuro"></p>
+            <p id="saidaEuroMin"></p>
+            <p id="saidaEuroDate"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
